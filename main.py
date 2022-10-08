@@ -1,5 +1,3 @@
-from re import T
-from time import clock_getres
 import pygame
 from sys import exit
 
@@ -32,6 +30,8 @@ class Grid:
         while y < display_surface.get_width():
             y += self.space
             pygame.draw.line(display_surface, self.color, (0,y), (x,y))
+
+
 
 
 grid = Grid()
