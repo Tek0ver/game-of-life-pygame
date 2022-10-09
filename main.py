@@ -134,6 +134,10 @@ while True:
             # pause
             if event.key == pygame.K_p:
                 pause = not pause
+            # reset
+            if event.key == pygame.K_r:
+                pause = True
+                cells = Cells()
         if event.type == pygame.MOUSEBUTTONDOWN:
         # add cell with clic
             if event.button == 1:
